@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Netflix.css">
+	<title>Netflix.ng</title>
+	<script type="text/javascript" src="Netflix.js"></script>
+</head>
+<body>
+	<header>
+		<p>NETFLIX</p>
+		<div>
+		    <div class="nav-buttons">
+				<img src="close.png" alt="" id="close">
+                <div id="container-circle" title="click to change theme">
+                    <div id="circle" onclick="changeMode()" ondblclick="cancelChangeMode()"></div>
+                </div>
+		    <button id="sign">Sign in</button>
+	    </div>
+		<img src="menu.png" alt="" id="menu" onclick="show()">
+	</header>
+	<marquee behavior="" direction="right">No 1 Streaming software in the US, Europe and Africa</marquee>
+	<div class="heading">
+		<h2>Unlimited movies, TV shows, and more.</h2>
+		<p>Watch anywhere. Cancel anytime.</p>
+		<p>Ready to watch? Enter your email to create or restart your membership</p>
+	    <div class="input shadow">		
+	    	<input type="email" required placeholder="Email address" id="email">
+		    <a href="SignUp.html"><button id="click">Get Started></button></a>
+		</div>
+	</div>
+	<img src="wakanda.jpg">
+	<div class="plot">
+		<h2>Synopsis: </h2>
+		<p><em>Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T'Challa's death. As the Wakandans strive to embrace their next chapter, the heroes must band together with Nakia and Everett Ross to forge a new path for their beloved kingdom.</em></p>
+	</div>
+	<div class="buttons">
+	        <a href="video.html"><button id="stream">Stream</button></a>
+			<progress max="100" value="0" id="progess-bar"></progress>
+	        <button id="download" onclick="download()">Download</button>
+    </div>
+    <div class="heading">
+    	<h2>Enjoy on your TV.</h2>
+    	<p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="heading">
+    	<h2 id="fa">Frequently Asked Questions</h2>
+    	<div class="faq">What is Netflix?<b>+</b></div>
+    	<div class="faq">How much does Netflix cost?<b>+</b></div>
+    	<div class="faq">Where can I watch?<b>+</b></div>
+    	<div class="faq">How do I cancel?<b>+</b></div>
+    	<div class="faq">What can I watch on Netflix?<b>+</b></div>
+    	<div class="faq">Is Netflix good for kids?<b>+</b></div>
+    </div>
+    <p align="center">Ready to watch? Enter your email to create or restart your membership</p>
+    <div class="input shadow">		
+	    	<input type="email" placeholder="Email address" id="email" required>
+		    <a href="SignUp.html"><button id="click">Get Started></button></a>
+	</div>
+	<div id="empty"></div>
+	<p id="contact">Questions? Contact us.</p>
+	<main>
+		<section id="question" class="shadow">
+			<a href="#">FAQ</a>
+			<a href="#">Account</a>
+			<a href="#">Investor Relations</a>
+			<a href="#">Ways to Watch</a>
+			<a href="#">Privacy</a>
+			<a href="#">Corporate Information</a>
+			<a href="#">Speed Test</a>
+			<a href="#">Only on Netflix</a><br>
+			<p>Netflix Nigeria</p>
+		</section>
+		<aside class="shadow">
+			<a href="#">Help Center</a>
+			<a href="#">Media Center</a>
+			<a href="#">Jobs</a>
+			<a href="#">Terms of Use</a>
+			<a href="#">Cookie Preferences</a>
+			<a href="#">Contact Us</a>
+			<a href="#">Legal Notices</a>
+		</aside>
+	</main>
+	<footer>Copyright &copy; 2022</footer>
+</body>
+</html>

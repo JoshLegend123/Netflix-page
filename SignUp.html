@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" href="Netflix.css">
+	    <title>Netflix.ng</title>
+	    <script src="Netflix.js"></script>
+    </head>
+    <body onload="lo">
+        <header>
+            <p>NETFLIX</p>
+            <div class="nav-buttons">
+                <img src="close.png" alt="" id="close">
+                <div id="container-circle" title="click to change theme">
+                    <div id="circle" onclick="changeMode()" ondblclick="cancelChangeMode()"></div>
+                </div>
+                <button id="sign">Sign in</button>
+            </div>
+            <img src="menu.png" alt="" id="menu" onclick="show()">
+        </header>
+        <marquee behavior="" direction="right">No 1 Streaming software in the US, Europe and Africa</marquee>
+        <section id="form">
+            <h2>Sign Up</h2>
+            <form action="" method="post" onsubmit="return submitForm()" name="RegForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" required placeholder="Name" minlength="9" maxlength="35" name="name">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" required placeholder="E-mail" name="email">
+                </div>
+                <div>
+                    <label for="number">Phone:</label>
+                    <input type="number" minlength="11" maxlength="14" placeholder="Tel" name="number">
+                </div>
+                <div id="pass">
+                    <label for="password">Password:</label>
+                    <input type="password" required placeholder="Password" minlength="8" maxlength="12" name="password">
+                </div>
+                <div id="pass">
+                    <label for="password">Password:</label>
+                    <input type="password" required placeholder="Comfirm Password" minlength="8" maxlength="12" name="confirmPassword">
+                </div> 
+            </form>
+            <div class="packages">
+                <label id="plan">Choose the plan that's right for you:</label><br>
+                <input type="radio" id="mobile" name="package">
+                <label for="mobile">Mobile</label>
+                <input type="radio" id="basic" name="package">
+                <label for="basic">Basic</label>
+                <input type="radio" id="standard" name="package">
+                <label for="standard">Standard</label>
+                <input type="radio" id="premium" name="package">
+                <label for="premium">Premium</label>
+            </div>
+            <h3 id="price">Price: </h3>
+            <section id="alternate">
+                <p>or</p>
+                <button id="google" type="submit">
+                    <img src="google.png" alt="">
+                    Sign up using Google
+                </button>
+                <button id="signup" type="submit">Sign Up</button>
+                <a href="#">Log in</a>
+            </section>
+        </section>
+        <script>
+            var package = document.getElementsByName('package')
+            var price = document.getElementById('price')
+
+            package[0].onclick = function () {
+                price.innerHTML ='Price:   ' + 'NGN1,200';
+            }
+            package[1].onclick = function () {
+                price.innerHTML ='Price:   ' + 'NGN2,900';
+            }
+            package[2].onclick = function () {
+                price.innerHTML ='Price:   ' + 'NGN3,600';
+            }
+            package[3].onclick = function () {
+                price.innerHTML ='Price:   ' + 'NGN4,400';
+            }
+        </script>
+    </body>
+    <footer>Copyright &copy; 2022</footer>
+</html>

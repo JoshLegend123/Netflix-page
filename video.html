@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" href="Netflix.css">
+	    <title>Netflix.ng</title>
+	    <script src="Netflix.js"></script>
+    </head>
+    <body onload="enterFullScreen(video)">
+        <header>
+            <p>NETFLIX</p>
+            <div class="nav-buttons">
+                <img src="close.png" alt="" id="close">
+                <div id="container-circle" title="click to change theme">
+                    <div id="circle" onclick="changeMode()" ondblclick="cancelChangeMode()"></div>
+                </div>
+                <button id="sign">Sign in</button>
+            </div>
+            <img src="menu.png" alt="" id="menu" onclick="show()">
+        </header>
+        <marquee behavior="" direction="right">No 1 Streaming software in the US, Europe and Africa</marquee>
+        <video id="vid" src="Endgamenew.mp4" controls muted autoplay></video>
+    </body>
+    <footer>Copyright &copy; 2022</footer>
+</html>

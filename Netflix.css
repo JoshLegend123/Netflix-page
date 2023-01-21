@@ -1,0 +1,352 @@
+body {
+	transition: 0.1s;
+}
+header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: black;
+	transition: 0.1s;
+}
+header p {
+	font-size: 50px;
+	color: red;
+	font-family: Bebas Neue;
+	margin-left: 45%;
+}
+header button {
+	height: 30px;
+	margin-right: 20px;
+}
+.nav-buttons {
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+}
+#circle {
+	width: 27px;
+	height: 27px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 100%;
+	position: absolute;
+	left: 0px;
+	transition: 0.5s;
+}
+#container-circle {
+	width: 70px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 4px;
+	background: gray;
+	position: relative;
+	margin-right: 30px;
+}
+button {
+	color: white;
+	background-color: red;
+	border: none;
+}
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+marquee {
+	background-color: green;
+	color: white;
+	top: 23%;
+	position: sticky;
+	left: 0;
+}
+img {
+	width: 100%;
+}
+#email{
+	height: 20px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.input{
+	display: flex;
+	width: 25%;
+	align-items: center;
+	margin: 0 auto 5px;
+}
+#click{
+	width: 150px;
+	height: 24px;
+    white-space: nowrap;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.plot {
+	padding-left: 15px;
+}
+.plot h2 {
+	text-align: center;
+}
+.buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center ;
+}
+#stream {
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: Voyage;
+	margin: 5px 0;
+}
+.buttons a {
+	box-shadow: none;
+}
+#download {
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: Voyage;
+	background-color: green;
+	margin: 3px 0 0 0;
+}
+.faq {
+	width: 300px;
+	height: 30px;
+	font-size: 14px;
+	background-color: grey;
+	padding: 10px 6px 0 6px;
+	margin: 10px 0;
+}
+b {
+	font-size: 18px;
+	float: right;
+}
+#empty {
+	width: 100%;
+	height: 5px;
+	background-color: grey;
+	margin-top: 20px;
+}
+main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 40%;
+}
+a {
+	text-decoration: none;
+	font-family: Helvetica Neue;
+	color: grey;
+	margin: 6px 0;
+}
+.shadow a:hover {
+	box-shadow: 8px 8px 6px grey;
+}
+#question, aside {
+	display: flex;
+	flex-direction: column;
+	color: grey;
+}
+#question {
+	margin-top: 40px;
+	margin-right: 50px;
+}
+#contact {
+	font-weight: light;
+	font-family: Helvetica Neue;
+	color: grey;
+	font-size: 16px;
+	margin: 15px 45% 0 40%;
+}
+footer {
+	text-align: center;
+	margin-top: 20px;
+}
+#vid {
+	width: 100%;
+	height: 100%;
+}
+progress {
+	width: 500px;
+	height: 50px;
+	display: none;
+}
+/*SignUp stylesheet*/
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: red;
+	justify-content: space-between;
+}
+div label{
+	font-size: 14px;
+	font-weight: 600;
+}
+#form #pass {
+	margin-left: 20px;
+}
+form div input {
+	height: 30px;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+	margin: 8px 0;
+}
+.packages {
+		margin-top: 10px;
+		margin-left: 90px;
+}
+.packages #plan {
+	margin-left: 20px;
+}
+.packages input {
+	margin: 15px 15px;
+}
+#alternate {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#alternate p {
+	color: gray;
+	font-size: 19px;
+}
+#google {
+	background-color: white;
+	color: red;
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+}
+#google img {
+	width: 20%;
+	height: 30px;
+}
+#google:hover {
+	background-color: green;
+	color: white;
+	box-shadow: 2px 6px 12px gray;
+}
+#alternate button {
+	font-size: 13px;
+	border: none;
+	border-radius: 4px;
+	width: 200px;
+	height: 30px;
+	box-shadow: 2px 6px 10px gray ;
+	margin-left: 20px;
+}
+#signup {
+	margin-top: 15px;
+	color: white;
+	background-color: red;
+}
+#signup:hover {
+	background-color: blueviolet;
+	color: white;
+	box-shadow: 2px 6px 12px gray;
+}
+#alternate a {
+	margin-top: 20px;
+}
+#menu {
+	display: none;
+}
+#close {
+    width: 29px;
+    height: 20px;
+	display: none;
+    align-items: center;
+}
+@media (max-width: 799px) {
+	header p {
+		margin-left: 0;
+	}
+	header {
+		padding: 0 100px;
+	}
+	marquee {
+		top: 15%;
+	}
+	.input {
+		width: 45%;
+	}
+	#contact {
+		font-size: 18px;
+		margin: 15px 38% 0;
+	}
+	#question {
+		margin-right: 80px;
+	}
+	main {
+		text-align: center;
+		margin: 0 30%;
+	}
+	#question, aside {
+		text-align: left;
+	}
+}
+@media (max-width: 477px) {
+	header {
+		padding: 0 10px;
+	}
+	.nav-buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: fixed;
+		top: 10px;
+		right: -350px;
+		background-color: grey;
+		height: 100vh;
+		width: 200px;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+		transition: 0.5s ease-in;
+	}
+	marquee {
+		top: 18%;
+	}
+	header button {
+		height: 30px;
+		margin-right: 50px;
+		margin-top: 15px;
+	}
+	#menu {
+		display: flex;
+	}
+	#close {
+		display: initial;
+        margin-left: 20px;
+        margin-bottom: 20px;
+	}
+	.heading {
+		text-align: center;
+	}
+	.input {
+		width: 80%;
+	}
+}
